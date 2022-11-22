@@ -9,21 +9,21 @@ namespace SimpleCode_22
     internal class Program
     {
         static void Main(string[] args)
-        {            
+        {
             for (int i = 0; i <= 10; i++)
-            {                
+            {
                 for (int j = 0; j < i; j++)
                 {
                     Console.Write("#");
-                }                
+                }
                 Console.WriteLine();
             }
             for (int i = 0; i <= 10; i++)
-            {                
+            {
                 for (int j = 10; j > i; j--)
                 {
                     Console.Write("#");
-                }                
+                }
                 Console.WriteLine();
             }
 
@@ -32,7 +32,7 @@ namespace SimpleCode_22
             {
                 for (int j = 10; j > i; j--)
                 {
-                    Console.Write(" ");                    
+                    Console.Write(" ");
                 }
                 for (int k = 0; k < i; k++)
                 {
@@ -52,7 +52,20 @@ namespace SimpleCode_22
                     Console.Write("#");
                 }
                 Console.WriteLine();
-            }            
+            }
+
+
+
+            for (int i = 0; i <= 10; i++)
+            {
+                Console.SetCursorPosition(10 - i, i + 50);
+                for (int j = 0; j < i; j++)
+                {
+                    Console.Write("#");
+                }
+                Console.WriteLine();
+            }
+
 
             Console.ReadKey();
         }
